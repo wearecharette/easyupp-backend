@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<AccessRequest xml:lang="en-US">
+	<AccessLicenseNumber>{{{accesslicensenumber}}}</AccessLicenseNumber>
+	<UserId>{{{userid}}}</UserId>
+	<Password>{{{password}}}</Password>
+</AccessRequest>
+<?xml version="1.0"?>
+<AddressValidationRequest xml:lang="en-US">
+   <Request>
+      <TransactionReference>
+         <CustomerContext>{{{first}}} {{{last}}}</CustomerContext>
+         <XpciVersion>1.0001</XpciVersion>
+      </TransactionReference>
+      <RequestAction>AV</RequestAction>
+   </Request>
+   <Address>
+      <City>{{{city}}}</City>
+      <StateProvinceCode>{{{state}}}</StateProvinceCode>
+			<PostalCode>{{{zip}}}</PostalCode>
+   </Address>
+</AddressValidationRequest>

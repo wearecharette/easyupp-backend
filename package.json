@@ -1,0 +1,52 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "CouchDBChanges": "~0.1.0",
+    "accounting": "^0.4.1",
+    "assert-plus": "^1.0.0",
+    "async": "^3.1.0",
+    "aws-sign2": "^0.7.0",
+    "aws4": "^1.8.0",
+    "caseless": "^0.12.0",
+    "cookie": "0.0.x",
+    "couchdb-api": ">=1.2.2",
+    "crypto": ">= 0.0.3",
+    "emailjs": ">= 0.0.1",
+    "errs": "^0.3.2",
+    "express": "2.5.7",
+    "eyes": ">=0.1.8",
+    "follow": ">= 0.8.0",
+    "forever-agent": "^0.6.1",
+    "gm": ">= 1.8.2",
+    "har-validator": "^5.1.3",
+    "hbs": ">= 1.0.8",
+    "http-get": ">= 0.5.9",
+    "is-typedarray": "^1.0.0",
+    "isstream": "^0.1.2",
+    "json-stringify-safe": "^5.0.1",
+    "jsprim": "^2.0.0",
+    "lodash": "^4.17.15",
+    "lodash.isempty": "^4.4.0",
+    "mailchimp-api": "*",
+    "marketcheck_cars_api": "git+https://github.com/MarketcheckCarsInc/sdk-javascript.git",
+    "nano": ">=0.0.5",
+    "npmlog": "^4.1.2",
+    "oauth-sign": "^0.9.0",
+    "performance-now": "^2.1.0",
+    "pg": "^7.12.1",
+    "tough-cookie": "^3.0.1",
+    "tunnel-agent": "^0.6.0",
+    "underscore.string": "^3.3.5",
+    "universal-analytics": "^0.4.20",
+    "xml2js": ">= 0.0.1"
+  },
+  "subdomain": "therapist",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}

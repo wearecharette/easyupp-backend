@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta property="og:title" content="Your Order with endue.com #{{{number}}}">
+  <title>Your Order with endue #{{{number}}}</title>
+    <style type="text/css">
+        i, .classification {
+            display:none;
+        }
+    </style>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-text-size-adjust: none; margin: 0; padding: 0; background-color: #FAFAFA; width: 100%;">
+  <center>
+
+    <table width="95%" border="0" cellspacing="0" cellpadding="1" align="center" bgcolor="#DDDDDD">
+    <tr>
+      <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="10" align="center">
+        <!-- Logo Header -->
+        <tr>
+          <td bgcolor="#FFFFFF" align="left" valign="top" style="border-collapse: collapse;">
+              <img src="http://staging.endue.com/css/images/bg-logo.png" style="max-width: 600px; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;" id="header_image">
+          </td>
+        </tr>
+        <tr valign="top">
+          <td bgcolor="#FFFFFF">
+            <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+            <p>
+              <b>Thank you for your order, {{{name}}}!</b>
+            </p>
+						{{#if tracking}}
+						<p>
+							Your order has been shipped, <a style="color: #5A394C;" href="http://wwwapps.ups.com/WebTracking/track?track=yes&trackNums={{tracking}}">track here</a>.
+						</p>
+						{{/if}}
+                        <br>
+            <p>
+              <b>Need to make changes to your account?</b><br/>
+              If you need to make any changes to your account, please visit our home page at <a style="color: #5A394C;" href="http://endue.com">endue.com</a>, sign in and click on your name at the top of any page.<br/>
+            </p>
+            </font>
+            <table cellpadding="5" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td colspan="2" bgcolor="#916B80">
+                <font style="color: #ffffff; font-family: Arial; font-size: 11px; line-height: 125%; text-align: left;" face="helvetica,verdana,arial" size="-1"><b>Billing and Shipping Information:</b></font>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 125%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                <b>E-mail Address:</b>&nbsp;&nbsp;{{{user}}} </font>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <table width="100%" cellspacing=0 cellpadding=0>
+                <tr>
+                  <td valign="top" width="50%" style="padding-right:1em">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    <b>Billing Address:</b><br/>
+                    {{{billing}}}<br/>
+                    </font>
+                  </td>
+                  <td valign="top" width="50%">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    <b>Shipping Address:</b><br/>
+                    {{{shipping}}}<br/>
+                    </font>
+                  </td>
+                </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                <b>Order Grand Total: ${{{total}}}</b>
+                </font>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                Don't forget to tell a friend about endue. Refer a friend and you both could get <b><a style="color: #5A394C;" href="http://endue.com/refer_a_friend">$15 off</a></b>. Visit endue.com for more information. </font>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" bgcolor="#916B80">
+                <font style="color: #ffffff; font-family: Arial; font-size: 11px; line-height: 125%; text-align: left;" face="helvetica,verdana,arial" size="-1"><b>Order Summary:</b></font>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table border="0" cellpadding="1" cellspacing="0" width="100%">
+                <tr>
+                  <td width="50%">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    <b>Order #:</b>
+                    </font>
+                  </td>
+                  <td>
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    <a style="color: #5A394C;" href="http://endue.com/{{url}}">#{{{number}}}</a>
+                    </font>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    <b>Shipping Method:</b>
+                    </font>
+                  </td>
+                  <td>
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    {{{[shipping method]}}} </font>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%">
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    Items: &nbsp; </font>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    ${{{merchandise}}} </font>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%">
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    Shipping & Handling: &nbsp; </font>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    ${{{[shipping amount]}}} </font>
+                    </span>
+                  </td>
+                </tr>
+                {{#if discount}}
+								<tr>
+                  <td width="50%">
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    [DISCOUNTS / CREDITS]: &nbsp; </font>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    -${{discount}} </font>
+                    </span>
+                  </td>
+                </tr>
+								{{/if}}
+                <tr>
+                  <td>&nbsp;
+                    
+                  </td>
+                  <td>
+                     ------
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%">
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    Total Before Tax: &nbsp; </font>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    ${{{merchandise}}} </font>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%">
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    Estimated Tax To Be Collected: &nbsp; </font>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    ${{{tax}}} </font>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>&nbsp;
+                    
+                  </td>
+                  <td>
+                     ------
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%">
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    <b> Order Total: &nbsp; </b>
+                    </font>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="small">
+                    <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                    <b> ${{{total}}} </b>
+                    </font>
+                    </span>
+                  </td>
+                </tr>
+								{{#each itemobject}}
+                <tr>
+                  <td colspan="2">
+                    <br/>&nbsp;<br/>
+                    <table>
+                    <tr valign="top">
+                      <td width="2%">
+                      </td>
+                      <td width="46%">
+                        <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1"><b>{{{item}}}</b></font>
+                      </td>
+											<td width="2%">
+                      </td>
+                      <td width="50%">
+                        <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                        <b>"{{{description}}}"</b><br/>
+                        <span class="quantity">Quantity: {{quantity}}</span> <span class="price">Price: ${{price}}</span><br/>
+                        </font>
+                      </td>
+                    </tr>
+                    </table>
+                  </td>
+                </tr>
+								{{/each}}
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <hr noshade="noshade" size="1"/>
+                <p>
+                  <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                  <b>
+                  Need to give a gift? Not sure what to buy? <br/>
+                  </b>
+                  endue gift certificates are available. We'll deliver it via e-mail -- it's the perfect last-minute gift. Learn more at <a style="color: #5A394C;" href="http://endue.com" target="_blank">www.endue.com</a>.<br/>
+                  </font>
+                </p>
+                <p>
+                  <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1"><b>Have any questions?</b><br/>
+                  We're here to help. Visit our Help page, available 24 hours a day at <a style="color: #5A394C;" href="http://endue.com/help" target="_blank">www.endue.com/help</a>. <br/></font>
+                </p>
+                <p>
+                  <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                  Or, feel free to reply to this email and we will endeavor to get back to you shortly. </font>
+                </p>
+                <p>
+                  <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                  If you ever need to return an order, visit your account profile page: <a style="color: #5A394C;" href="http://endue.com/account" target="_blank">www.endue.com/account</a> </font>
+                </p>
+                <p>
+                  <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                  Thank you again for shopping with us. </font>
+                </p>
+                <p>
+                  <font style="color: #000000; font-family: Arial; font-size: 11px; line-height: 100%; text-align: left;" face="helvetica,verdana,arial" size="-1">
+                  <b>
+                  <a style="color: #5A394C;" href="http://www.endue.com/">endue</a></b>
+                  <br/><b>
+                  Rock the Cradle, Change the World! </b>
+                  </font>
+                </p>
+              </td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+
+  </center>
+</body>
+</html>
+
+
+

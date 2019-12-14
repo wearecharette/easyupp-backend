@@ -1,0 +1,71 @@
+Subject: Your Order with endue
+
+
+Thank you for ordering from endue! Your purchase information appears below.
+
+{{#if tracking}}
+Your order has been shipped, track here: http://wwwapps.ups.com/WebTracking/track?track=yes&trackNums={{tracking}}.
+{{/if}}
+
+***********************************************************
+BILLING AND SHIPPING INFORMATION
+***********************************************************
+E-mail Address:	{{{user}}}
+Billing Address:
+
+{{{billing}}}
+
+Order Grand Total: ${{{total}}}
+
+Don't forget to tell a friend about endue. Refer a friend and you both could get $15 off. Click http://www.endue.com/refer_a_friend for more information.
+
+***********************************************************
+	ORDER DETAILS
+***********************************************************
+
+Shipping Details 
+
+***********************************************************
+Order number:			#{{{number}}}
+View your Order Summary online: http://www.endue.com/account
+
+Shipping Method:		{{[shipping method]}}}
+
+Items:                         ${{merchandise}}
+Shipping & Handling:            ${{{[shipping amount]}}}
+{{#if discount}}[DISCOUNTS / CREDITS]:          -${{discount}}{{/if}}
+                              ---------
+Total Before Tax:              ${{merchandise}}
+Estimated Tax To Be Collected:  ${{{tax}}}
+                              ---------
+Order Total:                   ${{total}}
+
+Shipping To
+
+{{{shipping}}}
+
+{{#each itemobject}}
+{{{item}}} "{{{description}}}"
+Quantity: {{quantity}}
+Price: ${{price}}
+{{/each}}
+
+***********************************************************
+Need to give a gift? Not sure what to buy?
+endue gift certificates are available.
+We'll deliver it via e-mail--it's the perfect last-minute gift.
+Learn more at http://www.endue.com
+***********************************************************
+Have any questions? We're here to help. Visit our Help page, available 24 hours a day: http://www.endue.com/help
+
+Or, feel free to reply to this email and we will endeavor to get back to you shortly.
+
+***********************************************************
+If you ever need to return an order, visit your account profile page: http://www.endue.com/account
+
+Thank you again for shopping with us.
+------------------------------------------------------------- 
+endue
+Rock the Cradle, Change the World
+http://www.endue.com
+-------------------------------------------------------------
