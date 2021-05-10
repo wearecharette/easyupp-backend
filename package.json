@@ -27,7 +27,7 @@
     "isstream": "^0.1.2",
     "json-stringify-safe": "^5.0.1",
     "jsprim": "^2.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "lodash.isempty": "^4.4.0",
     "mailchimp-api": "*",
     "marketcheck_cars_api": "git+https://github.com/MarketcheckCarsInc/sdk-javascript.git",
